@@ -29,5 +29,22 @@ pins.servoWritePin(AnalogPin.P1, 180)
 basic.pause(1000)
 pins.servoWritePin(AnalogPin.P1, 180)
 basic.pause(1000)
+```
+
+## Step 3 Add the code to move the sunflower
+This code ...
+
+```blocks
+basic.forever(function () {
+   CurrentLightLevel = input.lightLevel()
+   difference = LastLightLevel - CurrentLightLevel
+   if (difference >= 0) {
+       Direction2 = Direction2 * -1
+   }
+   Heading += Direction2 * 10
+   pins.servoWritePin(AnalogPin.P1, Heading)
+   LastLightLevel = CurrentLightLevel
+   basic.pause(500)
+})
 
 ```
