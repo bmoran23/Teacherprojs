@@ -1,9 +1,15 @@
 ## Step 1 - Create and Initilize Variables
+Create all the needed variables:
+
+CurrentLightLevel -- The light level current detected by the microbit
+LastLightLevel -- The previous light level. 
+difference -- LastLightLevel - CurrentLightLevel
+Direction -- which direction to move, right or left
+Heading -- the settign for the servo motor direction
+
 
 ```blocks
-let difference = 0
-let CurrentLightLevel = 0
-let Direction2 = 1
+let Direction = 1
 let LastLightLevel = 0
 let Heading = 90
 ```
