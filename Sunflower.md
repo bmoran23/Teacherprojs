@@ -1,11 +1,11 @@
 ## Step 1 - Create and Initilize Variables
-Create all the needed variables:
+### Create all the needed variables:
 
-CurrentLightLevel -- The light level current detected by the microbit
-LastLightLevel -- The previous light level. 
-difference -- LastLightLevel - CurrentLightLevel
-Direction -- which direction to move, right or left
-Heading -- the settign for the servo motor direction
+CurrentLightLevel -- The light level current detected by the microbit.  
+LastLightLevel -- The previous light level.  
+Difference -- LastLightLevel - CurrentLightLevel.  
+Direction -- which direction to move, right or left.  
+Heading -- the settign for the servo motor direction.     
 
 
 ```blocks
@@ -34,19 +34,13 @@ basic.pause(1000)
 This code ...
 
 ```blocks
-let Direction = 1
-let LastLightLevel = 0
-let Heading = 90
-```
-
-```blocks
 basic.forever(function () {
    CurrentLightLevel = input.lightLevel()
-   difference = LastLightLevel - CurrentLightLevel
+   Difference = LastLightLevel - CurrentLightLevel
    if (difference >= 0) {
-       Direction2 = Direction2 * -1
+       Direction = Direction * -1
    }
-   Heading += Direction2 * 10
+   Heading += Direction * 10
    pins.servoWritePin(AnalogPin.P1, Heading)
    LastLightLevel = CurrentLightLevel
    basic.pause(500)
