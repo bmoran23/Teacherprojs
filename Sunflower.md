@@ -14,7 +14,6 @@ let LastLightLevel = 0
 let Heading = 90
 ```
 
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
 
 ## Step 2 - Move the Sunflower all the way right and left then return to center.
 These blocks are added to the on Start code.  Seeing the range of motion helps you place the sunflower in the best position.
@@ -48,3 +47,5 @@ basic.forever(function () {
 })
 
 ```
+
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
