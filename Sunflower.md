@@ -12,6 +12,8 @@ Heading -- the settign for the servo motor direction.
 let Direction = 1
 let LastLightLevel = 0
 let Heading = 90
+let CurrentLightLevel = 0
+let Difference = 0
 ```
 
 
@@ -22,6 +24,8 @@ These blocks are added to the on Start code.  Seeing the range of motion helps y
 let Direction = 1
 let LastLightLevel = 0
 let Heading = 90
+let CurrentLightLevel = 0
+let Difference = 0
 pins.servoWritePin(AnalogPin.P1, 0)
 basic.pause(1000)
 pins.servoWritePin(AnalogPin.P1, 180)
