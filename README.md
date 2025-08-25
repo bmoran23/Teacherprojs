@@ -1,7 +1,7 @@
 
 > Open this page at [https://bmoran23.github.io/teacherprojs/](https://bmoran23.github.io/teacherprojs/)
 
-## Use as Extension
+## Use as Extensions
 
 This repository can be added as an **extension** in MakeCode.
 
