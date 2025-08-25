@@ -34,6 +34,12 @@ basic.pause(1000)
 This code ...
 
 ```blocks
+let Direction = 1
+let LastLightLevel = 0
+let Heading = 90
+```
+
+```blocks
 basic.forever(function () {
    CurrentLightLevel = input.lightLevel()
    difference = LastLightLevel - CurrentLightLevel
@@ -45,7 +51,6 @@ basic.forever(function () {
    LastLightLevel = CurrentLightLevel
    basic.pause(500)
 })
-
 ```
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
