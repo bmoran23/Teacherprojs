@@ -46,7 +46,7 @@ basic.forever(function () {
    }
    Heading += Direction * 10
    pins.servoWritePin(AnalogPin.P1, Heading)
-   let LastLightLevel = CurrentLightLevel
+   LastLightLevel = CurrentLightLevel
    basic.pause(500)
 })
 ```
