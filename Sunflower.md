@@ -1,7 +1,7 @@
 ## Step 1 - Create and Initilize Variables
 ### Create all the needed variables:
 
-CurrentLightLevel -- The light level current detected by the microbit.  
+CurrentLightLevel -- The light level currently detected by the microbit.  
 LastLightLevel -- The previous light level.  
 Difference -- LastLightLevel - CurrentLightLevel.  
 Direction -- which direction to move, right or left.  
