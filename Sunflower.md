@@ -35,7 +35,7 @@ basic.pause(1000)
 ```
 
 ## Step 3 Add the code to move the sunflower
-This code ...4
+This code ...5
 
 ```blocks
 basic.forever(function () {
