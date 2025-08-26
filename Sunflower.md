@@ -41,7 +41,7 @@ This code ...
 basic.forever(function () {
    CurrentLightLevel = input.lightLevel()
    Difference = LastLightLevel - CurrentLightLevel
-   if (difference >= 0) {
+   if (Difference >= 0) {
        Direction = Direction * -1
    }
    Heading += Direction * 10
