@@ -9,7 +9,7 @@ basic.forever(function () {
        Direction = Direction * -1
    }
    Heading += Direction * 10
-    pins.servoWritePin(AnalogPin.P1, Heading)
+    pins.servoWritePin(AnalogPin.P1, Direction * 10)
     LastLightLevel = CurrentLightLevel
     basic.pause(500)
 })
