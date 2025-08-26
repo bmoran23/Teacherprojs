@@ -1,9 +1,9 @@
+let LastLightLevel = 0
 let difference = 0
 let CurrentLightLevel = 0
-let Direction2 = 1
-let LastLightLevel = 0
-let Heading = 90
 let Item = 0
+let Direction2 = 1
+let Heading = 90
 pins.servoWritePin(AnalogPin.P1, 0)
 basic.pause(1000)
 pins.servoWritePin(AnalogPin.P1, 180)
