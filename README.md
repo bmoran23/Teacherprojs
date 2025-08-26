@@ -1,5 +1,5 @@
 
-> Open this page at [https://bmoran23.github.io/Teacherprojs/](https://bmoran23.github.io/Teacherprojs/)
+> Open this page at [https://bmoran23.github.io/microbit-projects/](https://bmoran23.github.io/microbit-projects/)
 
 ## Use as Extensions - -
 
@@ -8,7 +8,7 @@ This repository can be added as an **extension** in MakeCode.
 * open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
-* search for **https://github.com/bmoran23/Teacherprojs** and import
+* search for **https://github.com/bmoran23/microbit-projects** and import
 
 ## Edit this project
 
