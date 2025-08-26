@@ -1,3 +1,4 @@
+## Step 1
 ### Create all the needed variables:
 
 CurrentLightLevel -- The light level currently detected by the microbit.  
