@@ -40,7 +40,7 @@ This code ...
 ```blocks
 basic.forever(function () {
    CurrentLightLevel = input.lightLevel()
-   Difference = LastLightLevel - CurrentLightLevel
+   Difference = LastLightLevel-CurrentLightLevel
    if (Difference >= 0) {
        Direction = Direction * -1
    }
