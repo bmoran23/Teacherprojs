@@ -1,19 +1,18 @@
 ## Step 1
-### Create all the needed variables:
-
-CurrentLightLevel -- The light level currently detected by the microbit.  
-LastLightLevel -- The previous light level.  
-Difference -- LastLightLevel - CurrentLightLevel.  
-Direction -- which direction to move, right or left.  
-Heading -- the settign for the servo motor direction.     
-
+This code ...1
 
 ```blocks
-let Direction = 1
-let LastLightLevel = 0
-let Heading = 90
-let CurrentLightLevel = 0
-let Difference = 0
+basic.forever(function () {
+   CurrentLightLevel = input.lightLevel()
+   Difference = LastLightLevel - CurrentLightLevel
+   if (Difference >= 0) {
+       Direction = Direction * -1
+   }
+   Heading += Direction * 10
+    pins.servoWritePin(AnalogPin.P1, Heading)
+    LastLightLevel = CurrentLightLevel
+    basic.pause(500)
+})
 ```
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
