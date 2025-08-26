@@ -11,7 +11,8 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "Sunflower.md"
+        "Sunflower.md",
+        "neoPixel.md"
     ],
     "testFiles": [
         "test.ts"
