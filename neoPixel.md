@@ -14,9 +14,19 @@ for (let index = 0; index <= 15; index++) {
     basic.pause(500)
 }
 ```
-## Example 2.1
+## Example 2.2
 
 ```blocks
+input.onButtonPressed(Button.A, function () {
+    strip.shift(1)
+    strip.show()
+})
+
+input.onButtonPressed(Button.B, function () {
+    strip.rotate(1)
+    strip.show()
+})
+
 
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 let strip: neopixel.Strip = null
@@ -31,15 +41,7 @@ strip.setPixelColor(6, neopixel.colors(NeoPixelColors.Violet))
 strip.setPixelColor(7, neopixel.colors(NeoPixelColors.Purple))
 strip.show()
 
-input.onButtonPressed(Button.A, function () {
-    strip.shift(1)
-    strip.show()
-})
 
-input.onButtonPressed(Button.B, function () {
-    strip.rotate(1)
-    strip.show()
-})
 ```
 ## Example 3
 ```blocks
