@@ -42,7 +42,6 @@ strip.show()
 ```
 ## Example 3
 ```blocks
-let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 
 input.onButtonPressed(Button.A, function () {
     strip.shift(1)
