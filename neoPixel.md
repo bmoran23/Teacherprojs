@@ -14,7 +14,7 @@ for (let index = 0; index <= 15; index++) {
     basic.pause(500)
 }
 ```
-## Example 2
+## Example 2.1
 
 ```blocks
 
