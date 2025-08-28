@@ -40,6 +40,17 @@ strip.setPixelColor(7, neopixel.colors(NeoPixelColors.Purple))
 strip.show()
 ```
 
+```blocks
+input.onButtonPressed(Button.A, function () {
+    strip.shift(1)
+    strip.show()
+})
+
+input.onButtonPressed(Button.B, function () {
+    strip.rotate(1)
+    strip.show()
+})
+```
 
 ## Example 1
 
