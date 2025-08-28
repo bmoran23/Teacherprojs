@@ -17,6 +17,8 @@ for (let index = 0; index <= 15; index++) {
 ## Example 2
 
 ```blocks
+let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
+
 input.onButtonPressed(Button.A, function () {
     strip.shift(1)
     strip.show()
