@@ -1,6 +1,7 @@
 ## Example 1
 This code ...2
 
+
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 let range = strip.range(0, 10)
@@ -13,8 +14,9 @@ for (let index = 0; index <= 15; index++) {
     basic.pause(500)
 }
 ```
-```blocks
 ## Example 2
+
+```blocks
 input.onButtonPressed(Button.A, function () {
     strip.shift(1)
     strip.show()
@@ -38,9 +40,9 @@ strip.setPixelColor(7, neopixel.colors(NeoPixelColors.Purple))
 strip.show()
 
 ```
-
+## Example 3
 ```blocks
-## Example 2
+
 input.onButtonPressed(Button.A, function () {
     strip.shift(1)
     strip.show()
