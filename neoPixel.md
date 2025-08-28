@@ -28,9 +28,7 @@ strip.setPixelColor(5, neopixel.colors(NeoPixelColors.Indigo))
 strip.setPixelColor(6, neopixel.colors(NeoPixelColors.Violet))
 strip.setPixelColor(7, neopixel.colors(NeoPixelColors.Purple))
 strip.show()
-```
 
-```blocks
 input.onButtonPressed(Button.A, function () {
     strip.shift(1)
     strip.show()
